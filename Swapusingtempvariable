@@ -1,0 +1,14 @@
+Swapping two numbers Without using temporary variables: I/P :2,3
+                                                        o/p :3,2 
+#include<stdio.h>
+int main()
+{
+int a, b;
+printf("Enter the numbers:");
+scanf ("%d %d",&a,&b);
+a = a+b;
+b=a-b;
+a=a-b;
+printf("The swapped numbers is %d & %d",a,b);
+}
+
