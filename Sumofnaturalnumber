@@ -1,0 +1,20 @@
+USING WHILE LOOP : I/P : 15
+                   O/P :120
+Time Complexity : O(n) as the loop runs for n iterations
+Auxiliary Space : O(1) as only a fixed amount of memory is used.
+
+#include<stdio.h>
+
+int main()
+{
+int i,n,sum = 0;
+printf("Enter the number:");
+scanf("%d",&n);
+while(i<=n)
+{
+sum = sum +i;
+i++
+}
+printf("The sum of natural number is:%d",sum);
+return 0;
+}
