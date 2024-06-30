@@ -1,0 +1,25 @@
+Using Recursion sum of natural numbers : I/P : 10
+                                         O/P: 55
+Time Complexity : O(n) as the function is called n+1 times.
+Auxiliary Space : O(n) as each function call stores one value in the call stack, which consumes memory.
+
+#include <stdio.h>
+int sumofnaturalnumbers(int num)
+{
+    if (num != 0)
+       
+        // adding natural numbers up to given number n
+        return num + sumofnaturalnumbers(num - 1);
+    else
+        return num;
+}
+int main()
+{
+ 
+    int number = 10;
+   
+    // printing the result
+    printf("Sum = %d", sumofnaturalnumbers(number));
+   
+    return 0;
+}
