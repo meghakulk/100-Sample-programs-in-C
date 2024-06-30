@@ -1,0 +1,28 @@
+OUTPUT OF THE PROGRAM : I/P :  1 2 3 
+                        O/P :3 is the largest number
+Time complexity: O(1) as it is doing constant operations
+Auxiliary space: O(1)
+
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("Enter the number:");
+    scanf("%d %d %d",&a,&b,&c);
+    
+    if(a >= b && a >= c)
+    {
+        printf("%d is The largest number",a);
+    }
+    
+    else if(b >= a && b >= c)
+    {
+        printf("%d is the largest number",b);
+    }
+    else
+    {
+        printf("%d is the largest number",c);
+    }
+    return 0;
+}
