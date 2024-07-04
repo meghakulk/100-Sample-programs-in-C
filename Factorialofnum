@@ -1,0 +1,16 @@
+OUTPUT OF THE PROGRAM : Enter the number:2
+                        The result is 2
+//factorial is 6!=6*5*4*3*2*1
+#include <stdio.h>
+
+int main() {
+    int num,result=1,i;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    
+    for(i=2;i<=num;i++)
+    {
+        result = result *i;
+    }
+    printf("The result is %d",result);
+}
