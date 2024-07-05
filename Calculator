@@ -1,0 +1,45 @@
+OUTPUT OF THE PROGRAM :Enter an operator (+, -, *, /), if want to exit press x: -
+                                       Enter the first & second operand :3 4
+                                       3.000000 - 4.000000=-1.000000
+#include <stdio.h>
+#include<stdlib.h>
+
+int main() {
+    // Write C code here
+  char ch;
+  double a,b;
+  
+      while(1){                                                    //If we use while here the printf gets repeated no need to again compile the program
+      printf("Enter an operator (+, -, *, /), "
+               "if want to exit press x: ");
+      scanf("%c",&ch);
+      
+      if(ch == 'x')
+       exit(0);
+      printf("Enter the first & second operand :");
+      scanf("%lf %lf",&a,&b);
+      switch(ch)
+      {
+          ///For addition 
+          case '+':
+          printf("%lf + %lf=%lf",a,b,a+b);
+          break;
+          
+         case'-':
+         printf("%lf - %lf=%lf",a,b,a-b);
+         break;
+         
+         case'/':
+         printf("%lf / %lf=%lf",a,b,a/b);
+         break;
+         
+         case'*':
+         printf("%lf * %lf=%lf",a,b,a*b);
+         break;
+         
+         default:
+         printf("Error!please write a valid operator\n");
+    }
+    printf("\n");
+      }
+}
