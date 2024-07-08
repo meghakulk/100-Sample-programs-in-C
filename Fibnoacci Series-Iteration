@@ -1,0 +1,22 @@
+Fibnoacci Series OUTPUT: Enter the number: 4
+                        o/p : 0,1,1,2,3
+int main() {
+    // Write C code here
+    int prev1=0,prev2 = 1,i,num;
+    printf("Enter the number till the u need : ");
+    scanf("%d",&num);
+    printf("The Fibnoacci Series are : %d %d ",prev1,prev2);
+/* printf(The fibnoacci Series are : %d %d",prev1,prev2);
+printf("The fibnoacci Series are: %d",temp); */ This doesnt print the series
+    for(i = 2;i<=num;i++)
+    {
+      int temp = prev1 + prev2;
+      prev1 = prev2;
+      prev2 = temp;
+      printf("%d",temp);
+    }
+    printf("\n");
+    return 0;
+    
+}
+      
